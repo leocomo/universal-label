@@ -462,6 +462,7 @@ color: rgb(255, 255, 255);
         margin: 30px 10px;
         max-width: 80vw;
         padding-left: 30px;
+          padding-right: 30px;
       }
       .content{
         flex-direction: column;
