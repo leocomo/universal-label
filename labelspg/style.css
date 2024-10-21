@@ -1,11 +1,22 @@
-*{
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     margin: 0;
     padding: 0;
-}
-body{
-  font-family: "Roboto", Sans-serif;
-}
-.navbar input[type="checkbox"],
+  }
+  
+  body {
+    background: url(color-bg\ \(1\).webp);
+    font-size: 12px;
+  }
+  
+  body, button, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+  }
+  .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
 }
@@ -20,257 +31,334 @@ body{
   position: fixed;
   top: 0px;
 }
+.consultus{
+  color: rgb(0, 130, 182) !important;
+}
 
-.navlabel {
-    color: rgb(0, 130, 182) !important;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
-  }
-  .menu-items {
-    order: 2;
-    display: flex;
-    margin-right: 120px;
-  }
-  
-  .menu-items li {
-    list-style: none;
-    margin-left: 4rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.4rem;
-    padding: 5px;
-    margin-top: 25px;
-  }
-  
-  .menu-items a {
-    text-decoration: none;
-    color: #444;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
-  }
-  .menu-items a{
-    width: max-content;
-    position: relative;
-    cursor: pointer;
-   }
-   .menu-items a::after{
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    height: 4px;
-    width: 100%;
-    left: 0;
-    background: rgb(0, 130, 182);
-    transition: 0.3s;
-    transition-timing-function: ease-in-out;
-    transform: scalex(0);
-   }
-   .menu-items a:hover::after{
-    transform: scalex(1);
-  
-   }
-  
-  .menu-items a:hover {
-    color: rgb(0, 130, 182);
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .logo {
-    order: 1;
-    font-size: 2.3rem;
-    margin-bottom: 0.5rem;
-    margin-left: 35px;
-  }
-  .logoo{
-    margin-top: 36px;
-  }
-  .banner{
-    margin-top: 50px;
-    max-height: 230px;
-    overflow: hidden;
-  }
-  .banner img{
-    height: 100%;
-  }
-  .industries{
-    padding: 100px;
-    padding-top: 50px;
-  }
-  .main-heading{
-    color: rgb(0, 130, 182) !important;
-    font-size: 35px;
-    margin-bottom: 15px;
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+.menu-items {
+  order: 2;
+  display: flex;
+  margin-right: 120px;
+}
 
-  }
-  .industries h2:hover{
-    color: rgb(0, 130, 182);
-    cursor: pointer;
+.menu-items li {
+  list-style: none;
+  margin-left: 4rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  padding: 5px;
+  margin-top: 25px;
+}
 
-  }
-  .mainbox{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 40px;
-  }
-  .box1, .box2, .box3, .box4{
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-  }
-  .box img{
-    width: 69px;
-    height: 69px;
-  }
-.box1::before{
-    content: "";
-    width: 69px;
-    height: 69px;
-    background: url(../other\ images/medicine.png);
-    margin-left: -69px;
-    margin-bottom: -80px;
-    background-repeat: no-repeat;
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
 }
-.box2::before{
-    content: "";
-    width: 69px;
-    height: 69px;
-    background: url(../other\ images/milk-jar.png);
-    margin-left: -69px;
-    margin-bottom: -80px;
-    background-repeat: no-repeat;
+.menu-items a{
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+ }
+ .menu-items a::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background: rgb(0, 130, 182);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scalex(0);
+ }
+ .menu-items a:hover::after{
+  transform: scalex(1);
+
+ }
+
+.menu-items a:hover {
+  color: rgb(0, 130, 182);
+  transition: color 0.3s ease-in-out;
 }
-.box3::before{
-    content: "";
-    width: 69px;
-    height: 69px;
-    background: url(../other\ images/personal-hygiene.png);
-    margin-left: -69px;
-    margin-bottom: -80px;
-    background-repeat: no-repeat;
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  margin-left: 35px;
 }
-.box4::before{
-    content: "";
-    width: 69px;
-    height: 69px;
-    background: url(../other\ images/engine-oil.png);
-    margin-left: -69px;
-    margin-bottom: -80px;
-    background-repeat: no-repeat;
+.logoo{
+  margin-top: 36px;
 }
-.labels{
-  background: url(https://www.prakashlabels.com//wp-content/uploads/2019/07/Auto-id-lower-banner.jpg?id=5901);
-  height: 353px;
+.contact-form{
   display: flex;
   justify-content: center;
 }
-.labels h2{
-  color: #ffffff;
-  font-size: 100px;
-  font-family: sans-serif;
-  align-self: center;
+.info-div{
+  padding: 30px;
+  animation-duration: 2.5s;
+animation-name: move;
 }
-.label-sol {
-  display: flex;
-  padding: 80px;
-  justify-content: space-around;
-}
-.heading {
-  font-size: 40px;
-  color: rgb(0, 130, 182);
-  margin-bottom: 10px;
-}
-.heading +p{
-  font-size: 20px;
-}
-.sol-content h2 , .sol h2{
-  font-size: 30px;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-#sol-id{
-  animation: animate linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 35%;
-}
-  @keyframes animate {
-    from{
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    to{
-      transform: translate(0%);
-      opacity: 100;
-    }
+@keyframes move {
+  from{
+    transform: translate(-130%);
+    opacity: 0;
   }
-.sol-content , .sol , .col-1{
-  max-width: 250px;
+  to{
+    transform: translate(0%);
+    opacity: 100;
+  }
 }
-#sol-id h2:hover{
-color: rgb(0, 130, 182);
-cursor: pointer;
-}
-@media (min-width: 450px){
-.sol-content{
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  padding: 10px 20px;
-  padding-bottom: 20px;
-  max-height: fit-content;
-}
-.sol-content + .sol-content{
-  margin-top: 70px;
-}
-.sol{
-  margin-top: 35px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  padding: 10px 20px;
-  max-height: fit-content;
-  padding-bottom: 20px;
-}
-}
-h2 img{
-  padding-right: 10px;
-}
-.main-sec{
-  padding: 50px;
-  background-color: #257180;
-}
-.main-sec h3{
-  font-size: 20px;
-  margin-top: 17px;
-  font-weight: 300;
-  color: #fff;
-}
-.main-sec p{
-  color: #f2e5bfd3;
-  margin-top: 3px;
-  margin-left: 15px;
-  font-size: 20px;
-}
-.que-heading{
-  font-size: 27px;
-  color: #082a31;
-  margin-bottom: 20px;
-}
-.que-content{
-  max-width: 1000px;
-}
+  .background {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .container {
+    flex: 0 1 700px;
+    margin: auto;
+    padding: 10px;
+  }
+  .info-div{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    max-width: 350px;
+    justify-content: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-height: 403px;
+    border-radius: 20px;
+    align-self: center;
+    
 
+  }
+  .info-div h2{
+    font-size: 30px;
+  }
+  .info-div h3{
+    font-size: 18px;
+
+  }
+  .info-div span{
+    margin-top: 30px;
+    font-size: 18px;
+    color: rgb(0, 130, 182);
+  }
+  .screen {
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+#contain{
+  padding: 30px;
+  animation-duration: 2.5s;
+animation-name: animate;
+}
+@keyframes animate {
+  from{
+    transform: translate(130%);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0%);
+    opacity: 100;
+  }
+}
+  
+  /* .screen:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+    z-index: -1;
+  }
+   */
+  .screen-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #4d4d4f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .screen-header-left {
+    margin-right: auto;
+  }
+  
+  .screen-header-button {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 3px;
+    border-radius: 8px;
+    background: white;
+  }
+  
+  /* .screen-header-button.close {
+    background: #ed1c6f;
+  }
+  
+  .screen-header-button.maximize {
+    background: #e8e925;
+  }
+  
+  .screen-header-button.minimize {
+    background: #74c54f;
+  }
+   */
+  .screen-header-right {
+    display: flex;
+  }
+  
+  .screen-header-ellipsis {
+    width: 3px;
+    height: 3px;
+    margin-left: 2px;
+    border-radius: 8px;
+    background: #999;
+  }
+  
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: rgb(0, 130, 182);
+    font-size: 26px;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100px;
+    height: 4px;
+    background: rgb(0, 130, 182);
+  }
+  .mapouter{
+    margin-top: 20px;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .app-form-group.message {
+    margin-top: 40px;
+  }
+  
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #666;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #ddd;
+  }
+  
+  .app-form-button {
+    background: none;
+    border: none;
+    color: rgb(0, 130, 182);
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: rgb(3, 87, 121);
+  }
+  
+  .credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #ffa4bd;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  .credits-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .dribbble {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+  }
   footer{
     display: flex;
     background-color: #1b1e20;
     color: #fff;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding: 70px 0;
   }
   a{
     color: #fff;
     text-decoration: none;
   }
-  .footer-about-us{
+  .about-us{
     max-width: 20vw;
   }
   .quick-links{
@@ -296,9 +384,6 @@ h2 img{
   footer p{
     font-size: 17px;
   }
-  footer a ,p{
-    color: #b4b4b4;
-  }
   .rights{
     display: flex;
     background-color: #1b1e20;
@@ -322,9 +407,11 @@ h2 img{
   background: rgb(0, 130, 182);
  }
  .quick-links a:hover{
-color: rgb(255, 255, 255);
+color: rgb(0, 130, 182);
  }
- @media (max-width: 768px) {
+
+
+  @media (max-width: 768px) {
 
 
     .navbar-container input[type="checkbox"],
@@ -434,11 +521,48 @@ color: rgb(255, 255, 255);
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
       transform: rotate(-35deg);
     }
-    .banner{
-        margin-top: 95px;
+  
+    .aboutus{
+      flex-direction: column;
+    }
+    .aboutpic{
+      padding-top: 0px;
+      width: 100vw;
+      align-self: center;
     }
 }
-@media (max-width: 450px){
+  @media screen and (max-width: 520px) {
+    .screen-body {
+      flex-direction: column;
+    }
+  
+    .screen-body-item.left {
+      margin-bottom: 30px;
+    }
+  
+    .app-title {
+      flex-direction: row;
+    }
+  
+    .app-title span {
+      margin-right: 12px;
+    }
+  
+    .app-title:after {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+  @media (max-width: 450px){
     footer {
         flex-direction: column;
       }
@@ -447,7 +571,7 @@ color: rgb(255, 255, 255);
         font-size: 16px;
         line-height: 26px;
       }
-      .footer-about-us{
+      .about-us{
         max-width: 60vw;
         padding-left: 30px;
       }
@@ -462,56 +586,50 @@ color: rgb(255, 255, 255);
       .rights h3{
         font-size: 12px;
       }
-      .mainbox{
+      .gmap_canvas{
+        width: 73vw !important;
+        height: 30vh !important;
+      }
+      .screen{
+        margin-top: 100px;
+      }
+      .contact-form{
         flex-direction: column;
+        margin-top: 150px;
       }
-      .industries{
-        padding: 40px;
+      .screen{
+        margin-top: 0px;
+        margin-bottom: 40px;
       }
-      .content{
-        padding: 10px 70px;
-        padding-right: 40px;
-        margin-top: 30px;
+      .container{
+        margin-top: 10px;
       }
-      .box1, .box2, .box3, .box4{
-        padding: 20px 0;
-      }
-      .mainbox{
-        margin-top: 0;
-      }
-      .label-sol{
-        flex-direction: column;
-        padding: 20px 50px;
-        margin-bottom: 50px;
-      }
-      .col-1{
-        max-width: 350px;
-      }
-      .sol-content{
-        max-width: 350px;
+      .info-div{
+        width: 420px !important;
       }
     }
     @media (min-width: 650px) {
-        .get-qoute{
-          background-color: rgb(0, 130, 182);
-          margin-top: 20px;
-          padding-top: 10px;
-          padding-left: 10px;
-          padding-right: 10px;
-          border-radius: 20px;
-          margin-left: 40px;
-        }
-        .get-qoute li{
-          margin: 0;
-          padding: 0;
-        }
-        .get-qoute li a{
-          color: #fff;
-        }
-        .get-qoute li a:hover{
-          color: black;
-        }
-        .product img:hover{
-          transform: scale(1.2);
-        }
+      .get-qoute{
+        background-color: rgb(0, 130, 182);
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        margin-left: 40px;
       }
+      .get-qoute li{
+        margin: 0;
+        padding: 0;
+      }
+      .get-qoute li a{
+        color: #fff;
+      }
+      .get-qoute li a:hover{
+        color: black;
+      }
+      .product img:hover{
+        transform: scale(1.2);
+      }
+    }
+  
