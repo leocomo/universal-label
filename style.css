@@ -785,7 +785,8 @@ color: rgb(0, 130, 182);
     justify-content: center;
 }
 .our-mission img{
-margin-left: 10px;
+margin-left: 20px;
+	max-width: 90vw;
 }
 .quality{
   padding: 50px 30px;
