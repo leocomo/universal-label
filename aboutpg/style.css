@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  font-family: "Roboto", Sans-serif;
+}
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  width: 100vw;
+  background: #fff;
+  color: #000;
+  height: 85px;
+  z-index: 12;
+  position: fixed;
+  top: 0px;
+}
+
+.aboutpg{
+    color: rgb(0, 130, 182) !important;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+  }
+  .menu-items {
+    order: 2;
+    display: flex;
+    margin-right: 120px;
+  }
+  
+  .menu-items li {
+    list-style: none;
+    margin-left: 4rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    padding: 5px;
+    margin-top: 25px;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  .menu-items a{
+    width: max-content;
+    position: relative;
+    cursor: pointer;
+   }
+   .menu-items a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background: rgb(0, 130, 182);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scalex(0);
+   }
+   .menu-items a:hover::after{
+    transform: scalex(1);
+  
+   }
+  
+  .menu-items a:hover {
+    color: rgb(0, 130, 182);
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .logo {
+    order: 1;
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+    margin-left: 35px;
+  }
+  .logoo{
+    margin-top: 36px;
+  }
+  .banner{
+    margin-top: 50px;
+    max-height: 230px;
+    overflow: hidden;
+  }
+  .banner img{
+    height: 100%;
+  }
+  .about-us{
+    padding: 100px 100px;
+    padding-top: 35px;
+    overflow: hidden;
+
+  }
+  .about-div{
+    animation-name: move;
+    animation-duration: 3s;
+  }
+  @keyframes move {
+    from{
+      transform: translate(230%);
+      opacity: 0;
+    }
+    to{
+      transform: translate(0%);
+      opacity: 100;
+    }
+  }
+  #animate{
+  animation: animate linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+  @keyframes animate {
+    from{
+      transform: translate(230%);
+      opacity: 0;
+    }
+    to{
+      transform: translate(0%);
+      opacity: 100;
+    }
+  }
+  #animate1{
+    animation: animated linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+    @keyframes animated {
+      from{
+        transform: translate(-230%);
+        opacity: 0;
+      }
+      to{
+        transform: translate(0%);
+        opacity: 100;
+      }
+    }
+
+  .about-us h2{
+    color: rgb(0, 130, 182);
+    margin-bottom: 25px;
+    font-size: 40px;
+  }
+  .about-us p{
+    color: #696969;
+    font-size: 18px;
+    line-height: 27px;
+
+  }
+  .our-mission{
+    display: flex;
+    margin: 60px 0;
+    margin-bottom: 0px;
+    background-color: #e7e7e9 ;
+
+  }
+  .our-mission img{
+    margin: 20px 20px;
+
+  }
+  .our-mission-content{
+    padding: 30px 30px;
+    margin-right: 40px;
+    padding-top: 45px;
+  }
+  .our-mission-content h2{
+    font-size: 45px;
+    color: rgb(0, 130, 182);
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+  .our-mission-content p{
+    font-size: 25px;
+    line-height: 40px;
+    word-spacing: 8px;
+    color: #000;
+  }
+  .why-chooseus{
+    padding: 30px;
+    padding-bottom: 60px;
+  }
+  .why-chooseus p{
+    padding: 30px;
+  }
+  .why-chooseus h2+p{
+    margin: 0 30px;
+    margin-bottom: 30px;
+
+  }
+  .why-chooseus h2{
+    color: rgb(0, 130, 182);
+    margin: 30px 0;
+    font-size: 40px;
+    margin-left: 60px;
+    margin-bottom: 0px;
+  }
+  .why-chooseus h3{
+    font-size: 25px;
+  }
+.icon h3:hover{
+  color: rgb(0, 130, 182);
+  cursor: pointer;
+}
+  i{
+    font-size: 40px;
+    width: 40px;
+    margin-right: 20px;
+  }
+  .content{
+    display: flex;
+    justify-content: space-around;
+  }
+  .card{
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+  .icon{
+    display: flex;
+  }
+  
+  footer{
+    display: flex;
+    background-color: #1b1e20;
+    color: #fff;
+    justify-content: space-evenly;
+    padding: 70px 0;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  .footer-about-us{
+    max-width: 20vw;
+  }
+  .quick-links{
+    max-width: 20vw;
+  }
+  .contact-us{
+    max-width: 20vw;
+  }
+  .footer ,h3 ,p{
+    padding-top: 0px;
+    font-weight: 100;
+  }
+  footer a{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+    font-size: 17px;
+  }
+  footer h2{
+    margin: 20px 0;
+
+  }
+  footer p{
+    font-size: 17px;
+  }
+  footer a ,p{
+    color: #b4b4b4;
+  }
+  .rights{
+    display: flex;
+    background-color: #1b1e20;
+    color: #fff;
+    padding: 30px 0;
+    justify-content: center;
+  }
+
+ footer h2{
+  width: max-content;
+  position: relative;
+  cursor: pointer;
+ }
+ footer h2::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 4px;
+  width: 100%;
+  left: 0;
+  background: rgb(0, 130, 182);
+ }
+ .quick-links a:hover{
+color: rgb(255, 255, 255);
+ }
+ @media (max-width: 768px) {
+
+
+    .navbar-container input[type="checkbox"],
+    .navbar-container .hamburger-lines {
+      display: block;
+    }
+    .navbar{
+      height: 95px;
+    }
+  
+    .navbar-container {
+      display: block;
+      position: relative;
+      height: 64px;
+    }
+  
+    .navbar-container input[type="checkbox"] {
+      position: absolute;
+      display: block;
+      height: 32px;
+      width: 30px;
+      top: 20px;
+      left: 20px;
+      z-index: 5;
+      opacity: 0;
+    }
+  
+    .navbar-container .hamburger-lines {
+      display: block;
+      height: 23px;
+      width: 35px;
+      position: absolute;
+      top: 35px;
+      left: 20px;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .navbar-container .hamburger-lines .line {
+      display: block;
+      height: 4px;
+      width: 100%;
+      border-radius: 10px;
+      background: #333;
+    }
+  
+    .navbar-container .hamburger-lines .line1 {
+      transform-origin: 0% 0%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line2 {
+      transition: transform 0.2s ease-in-out;
+    }
+  
+    .navbar-container .hamburger-lines .line3 {
+      transform-origin: 0% 100%;
+      transition: transform 0.4s ease-in-out;
+    }
+  
+    .navbar .menu-items {
+      padding-top: 100px;
+      background: #fff;
+      height: 100vh;
+      max-width: 300px;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 50px;
+      transition: transform 0.5s ease-in-out;
+      box-shadow: 5px 0px 10px 0px #aaa;
+    }
+  
+    .navbar .menu-items li {
+      margin-bottom: 1.5rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+    .logo {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 2rem;
+      z-index: -1;
+      margin-bottom: 0;
+    }
+    .logoo{
+      max-width: 110px;
+      margin-top: 5px;
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+      transform: translateX(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+      transform: rotate(35deg);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+      transform: scaleY(0);
+    }
+  
+    .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+      transform: rotate(-35deg);
+    }
+  
+    .aboutus{
+      flex-direction: column;
+    }
+    .aboutpic{
+      padding-top: 0px;
+      width: 100vw;
+      align-self: center;
+    }
+    .our-mission{
+        flex-direction: column;
+    }
+    .our-mission-content{
+        padding-top: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+    .our-mission-content p{
+        line-height: 40px;
+        word-spacing: 7px;
+    }
+    .our-mission-pic{
+        overflow: hidden;
+    }
+}
+@media (max-width: 450px){
+    footer {
+        flex-direction: column;
+      }
+      footer p{
+        flex-direction: column;
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .footer-about-us{
+        max-width: 60vw;
+        padding-left: 30px;
+      }
+      .quick-links{
+        max-width: 80vw;
+        padding-left: 30px;
+      }
+      .contact-us{
+        max-width: 80vw;
+        padding-left: 30px;
+      }
+      .rights h3{
+        font-size: 12px;
+      }
+      .banner{
+        margin-top: 95px;
+      }
+      .about-us{
+        margin: 30px 10px;
+        max-width: 80vw;
+        padding-left: 30px;
+      }
+      .content{
+        flex-direction: column;
+      }
+      .why-chooseus h2{
+        margin-left: 20px;
+      }
+      .why-chooseus h2+p{
+        padding-left: 0px;
+      }
+      .card{
+        margin-left: 20px;
+      }
+    }
+    @media (min-width: 650px) {
+        .get-qoute{
+          background-color: rgb(0, 130, 182);
+          margin-top: 20px;
+          padding-top: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-radius: 20px;
+          margin-left: 40px;
+        }
+        .get-qoute li{
+          margin: 0;
+          padding: 0;
+        }
+        .get-qoute li a{
+          color: #fff;
+        }
+        .get-qoute li a:hover{
+          color: black;
+        }
+        .product img:hover{
+          transform: scale(1.2);
+        }
+        .card{
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          padding-top: 20px;
+          padding-right: 10px;
+          padding-left: 15px;
+        }
+        .card:hover{
+          transform: scale(1.1);
+          
+        }
+      }
+    
